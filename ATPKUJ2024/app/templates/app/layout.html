@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - My Django Application</title>
+    {% load static %}
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app/content/site.css' %}" />
+    -->
+    <style>
+        /* Style to customize the text area */
+        textarea {
+            width: 100%;
+            height: 200px;
+            resize: vertical; /* Allows adjusting height */
+        }
+
+        /* Style to format the results */
+        .results {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'app/scripts/script.js' %}"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'app/fonts/favicon.ico' %}">
+</head>
+
+<body>
+
+    <div>
+        <p>This page allows the user to learn about the project related to text analysis for different languages within the "Natural Language Processing" course.</p>
+    </div>
+
+    <div>
+        <p>Enter text below or upload a file:</p>
+        <!-- Text area -->
+        <textarea id="tekst" name="tekst" placeholder="Enter text here"></textarea>
+    </div>
+
+    <div>
+        <!-- "Upload File" button -->
+        <input type="file" id="fileInput" name="fileInput">
+        <button onclick="loadFile()">Upload File</button>
+
+        <!-- "Check" button -->
+        <button onclick="checkText()">Check</button>
+    </div>
+
+    <!-- Results section -->
+    <div class="results" id="resultsSection"></div>
+
+    <div>
+        <p>Text analyse:</p>
+    </div>
+
+    <div class="results2" id="resultsSection2"></div>
+
+    <!-- Inserting the content variable -->
+    {{ content|safe }}
+
+    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>
