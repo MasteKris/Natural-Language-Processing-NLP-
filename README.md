@@ -23,6 +23,6 @@ Używałem do pomocy AI - aby pomogła by mi, bo pisałem po raz pierwszy we fra
 # Information (EN)
 **The text was written in Polish**
 
-*Thank you for your attention and best regards,
+*Thank you for your attention and best regards,*
 
-K. F. 3rd year of Computer Science*
+*K. F. 3rd year of Computer Science*
