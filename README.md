@@ -21,7 +21,7 @@ Używałem kilka bibliotek w projekcie, ale też byli i inne, np. są to:
 Używałem do pomocy AI - aby pomogła by mi, bo pisałem po raz pierwszy we frameworku Django oraz w python. Także pisałem kod w Visual Studio (C#), aby umożliwić taki proces, używałem różne dodatki.
 
 # Information (EN)
-**The text was written in Polish**
+**The text was written in Polish.**
 
 *Thank you for your attention and best regards,*
 
